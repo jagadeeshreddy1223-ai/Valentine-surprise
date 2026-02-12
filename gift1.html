@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Just for You 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gifts-bg">
+
+<h1 class="gift-title">Answer honestly bby 🥰</h1>
+
+<!-- QUESTIONS -->
+<div class="question-box">
+  <p>1. Do you feel safe and happy when you talk to me? 💕</p>
+  <button onclick="nextQ()">Yes 💖</button>
+</div>
+
+<div class="question-box hidden">
+  <p>2. Do I make you smile without trying? 😊</p>
+  <button onclick="nextQ()">Yes 😘</button>
+</div>
+
+<div class="question-box hidden">
+  <p>3. Can I be the one who stays by your side always? ❤️</p>
+  <button onclick="showLove()">Yes 💞</button>
+</div>
+
+<!-- 💖 LOVE POPUP -->
+<div class="love-modal hidden" id="loveModal">
+  <div class="love-content">
+    <h2>🥹💖</h2>
+    <p class="love-msg">
+      You are really loving me 💕<br><br>
+      Love you kanna 🫶
+    </p>
+    <button class="close-btn" onclick="closeLove()">Okay 🥰</button>
+  </div>
+</div>
+
+<button class="back-btn" onclick="goBack()">⬅ Back</button>
+
+<script src="script.js"></script>
+</body>
+</html>
